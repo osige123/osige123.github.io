@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>my mode</title>
+    </head>
+    <style>
+
+        body{
+            text-align: center;
+            background-color: magenta;
+        }
+container{
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+h4 {
+    color: #cc0000;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+}
+
+input[type="number"],
+input[type="pin"]{
+    width: 20%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+a:link, a:visited{
+  background-color: #f44336;
+  color: white;
+  padding: 14px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+
+}
+a:hover, a:active {
+  background-color:blue;
+}
+select{
+    width: 20%;
+    padding: 12px;
+     border: 5px solid #ccc;
+     border-radius: 5px;
+     font-size: 16px;
+     margin-bottom: 20px;
+}
+    </style>
+    <body>
+        <h1>FURNITURE SHOP GROUP</h1>
+        <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="services.html">SERVICES</a>
+    <a href="contact.html">CONTACT</a>
+        <h3>make payment</h3>
+        <p>choose the mobile architecture
+             in order to make payment of product you choose</p>
+             
+                <h4>Send money</h4>
+                <form action = "payment.php" method="POST">
+                    <label for="recipient">Recipient phone number</label>
+                    <select id="recipient" name="recipient">
+                        <option value="airtel money"> Airtel Money </option>
+                         <option value="mpesa"> Mpesa </option>
+                          <option value="halopesa">HaloPesa </option>
+                           <option value="mix by yas">Mix by yas</option>
+                            <option value="pay card"> PayCard </option>
+                    </select>
+                    <br><br>
+                    <label for="amount">Amount TZS</label>
+                    <input type="number" id="amount" name="amount" placeholder="eg, 70000"  required><br><br>
+                    
+                    <label for="pin"> PIN</label>
+                    <input type="pin" id="pin" name="pin" placeholder="Enter pin" required><br><br>
+                    <button>SUBMIT</button><br><br>
+
+                   <a href="complete.html">Confirm send</a>
+                </form>
+              
+             
+            
+    
+    </body>
+</html>

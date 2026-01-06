@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="styeesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <title>my mode</title>
+    </head>
+
+    <style>
+      body{
+        background-color: green;
+        
+      }
+      
+a:link, a:visited{
+  background-color: #f44336;
+  color: white;
+  padding: 14px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-table;
+  cursor: pointer;
+  margin-left: 20px;
+}
+a:hover, a:active {
+  background-color:blue;
+}
+
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+input[type="text"],
+input[type="number"],
+input[type="password"]{
+    width: 50%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: left;
+  
+}
+
+button{
+  width: 30%;
+  padding: 20px;
+  border: 40px;
+  border-color: hsl(4, 90%, 58%);
+  border-radius: 8px;
+  background-color: #333;
+  color: antiquewhite;
+  cursor: pointer;
+
+}
+.container{
+  background-color: peru;
+  width: 50%;
+  padding: 1. 5rem;
+  margin: 50px auto;
+  border-radius: 10px;
+  text-align: center;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  
+  color: aqua;
+  border:15px;
+  border-color: #f44336;
+}
+
+
+
+    </style>
+    
+  <body>
+    <div class="header">
+<h1  >FURNITURE SHOP GROUP</h1>
+
+ <a href="index.html">HOME</a> 
+    </div>
+    
+        <p  >Create your account</p>
+        <div class="container">
+        
+        <h3> Registration Form</h3>
+    <form action="https://formsubmit.co/osigechuonyo@gmail.com" method="POST">
+    
+        <label for="first_name"  >FIRST NAME:</label>
+        <input type="text" id="first_name" name="first_name">
+        <label for="last_name"  >LAST NAME:</label>
+        <input type="text" id="last_name" name="last_name">
+        <label for="password"  >PASSWORD:</label>
+        <input type="password" id="password" name="password"><br><br><br>
+
+        <input type="hidden" name="_subject" value="TEST: New user Registration">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="basic">
+        <input type="hidden" name="_next" value="https://osige123.github.io/thankyou.html">
+
+        
+        <button type="submit">SUBMIT</button><br><br>
+      
+         
+      </form><br><br>
+      <a href="login.html">LOGIN IN</a>
+
+     </div>
+
+     <a href="index.html">BACK</a> 
+     <script>
+      document.querySelector('form'). addEventListener('submit', function() {
+        alert('Thank you! Your registration has been submitted');
+      });
+     </script>
+     
+      
+    </body>
+</html>
